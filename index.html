@@ -1,0 +1,30 @@
+<html ng-app="mySimpleApp">
+<head>
+	<script src="https://code.angularjs.org/1.2.16/angular.min.js" type="text/javascript"> 
+	</script>
+		<script src="scripts/mySimpleApp.js" type="text/javascript"> </script>
+	<script src="scripts/controllers/simpleController.js" type="text/javascript"> </script>
+	<title></title>
+</head>
+<body ng-controller="simpleController">
+	
+			<div>
+				<input type="text" ng-model="words" placeholder="type something..."/>
+				Don't {{test}} Do it!
+				{{words}}
+			</div>
+		<ul ng-repeat="word in words">
+			<li> {{word}}
+			</li>
+		</ul>
+		<p> {{words}}
+		</p>
+		
+	<div>
+		
+	</div>
+
+
+
+</body>
+</html>
